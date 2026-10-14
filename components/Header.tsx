@@ -2,13 +2,14 @@
 
 import { useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { MessageCircle, Search, ShoppingBag, X } from 'lucide-react'
+import { Search, ShoppingBag, X } from 'lucide-react'
 import { formatPrice, getProducts } from '@/data/products'
 import { useCart } from '@/lib/cart-context'
 import { WHATSAPP_URL } from '@/lib/site-config'
 import { normalize } from '@/lib/utils'
 import { Logo } from './Logo'
 import { SocialLinks } from './SocialLinks'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 export function Header() {
   const router = useRouter()
@@ -128,7 +129,7 @@ export function Header() {
           rel="noopener noreferrer"
           className="hidden h-11 items-center gap-2 rounded-xl bg-[#15803d]/10 px-4 text-sm font-bold text-[#15803d] transition hover:bg-[#15803d] hover:text-white md:flex"
         >
-          <MessageCircle className="size-4" />
+          <WhatsAppIcon className="size-4" />
           WhatsApp
         </a>
 
@@ -177,7 +178,7 @@ export function Header() {
           aria-label="WhatsApp"
           className="flex size-11 items-center justify-center rounded-xl bg-[#15803d] text-white shadow-xs"
         >
-          <MessageCircle className="size-5" />
+          <WhatsAppIcon className="size-5" />
         </a>
       </div>
     </header>

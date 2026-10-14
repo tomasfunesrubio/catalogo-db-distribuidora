@@ -1,11 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageCircle, Minus, Plus, ShoppingBag, Store, Trash2, Truck, X } from 'lucide-react'
+import { Minus, Plus, ShoppingBag, Store, Trash2, Truck, X } from 'lucide-react'
 import { formatPrice } from '@/data/products'
 import { useCart } from '@/lib/cart-context'
 import { PICKUP_DISCOUNT, SHOP_INFO, whatsappLink } from '@/lib/site-config'
 import { buildOrderMessage, type DeliveryMethod } from '@/lib/whatsapp-order'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 const inputClass =
   'h-10 w-full rounded-xl border border-[#d5cabc] bg-white px-3 text-xs outline-none focus:border-[#b80f0f]'
@@ -273,7 +274,7 @@ export function CartDrawer() {
                 onClick={sendOrder}
                 className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#15803d] px-4 text-sm font-extrabold text-white shadow-lg transition hover:bg-[#166534] active:scale-[0.98]"
               >
-                <MessageCircle className="size-5" />
+                <WhatsAppIcon className="size-5" />
                 Finalizar pedido por WhatsApp
               </button>
 

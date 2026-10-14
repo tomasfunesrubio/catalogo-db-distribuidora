@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { MessageCircle } from 'lucide-react'
 import { SHOP_INFO, WHATSAPP_URL } from '@/lib/site-config'
 import { Logo } from './Logo'
 import { SocialLinks } from './SocialLinks'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 export function Footer() {
   return (
@@ -42,7 +42,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-lg bg-[#15803d] px-3 py-1.5 text-xs font-bold text-white hover:bg-[#166534] transition mt-1"
             >
-              <MessageCircle className="size-3.5" /> Escribinos por WhatsApp
+              <WhatsAppIcon className="size-3.5" /> Escribinos por WhatsApp
             </a>
           </div>
         </div>

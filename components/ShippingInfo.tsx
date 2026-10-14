@@ -1,5 +1,6 @@
-import { ArrowRight, Check, MapPin, MessageCircle, Truck } from 'lucide-react'
+import { ArrowRight, Check, MapPin, Truck } from 'lucide-react'
 import { SHOP_INFO, WHATSAPP_URL } from '@/lib/site-config'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 const SHIPPING_POINTS = [
   `Envíos a domicilio en ${SHOP_INFO.zones.join(', ')}.`,
@@ -36,7 +37,7 @@ export function ShippingInfo() {
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#15803d] px-5 py-3.5 text-sm font-bold text-white shadow-md hover:bg-[#166534] transition"
           >
-            <MessageCircle className="size-4" />
+            <WhatsAppIcon className="size-4" />
             Consultar envíos por WhatsApp
           </a>
         </div>
